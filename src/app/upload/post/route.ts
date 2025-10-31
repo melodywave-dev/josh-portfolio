@@ -1,4 +1,4 @@
-import { createClient } from '@/app/lib/supabase/server';
+import { createClient } from '@/utils/supabase/server';
 
 const supabase = await createClient();
 const { data: posts } = await supabase.from("posts").select();

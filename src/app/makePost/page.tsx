@@ -32,6 +32,8 @@ export default async function Home() {
         }}
       >
         <input name="file" ref={inputFileRef} type="file" required />
+        <input name="description" type="text" required />
+
         <button type="submit">Upload</button>
       </form>
       {blob && (
